@@ -15,6 +15,7 @@ namespace WPFTest
             ITransaction iTransaction = null;
             try
             {
+                // 调用注册表的CLSID, 并实例化
                 Guid guid = new Guid(_guid);
                 Type transactionType = Type.GetTypeFromCLSID(guid);
                 object transaction = Activator.CreateInstance(transactionType);
@@ -24,6 +25,7 @@ namespace WPFTest
             catch (Exception ex)
             {
                 Console.Write(ex.ToString());
+                Console.Write("教学提醒：试试将Platform target从Any CPU改为x64");
             }
             Console.Write("end creating transaction");
             return iTransaction;

@@ -8,8 +8,7 @@ using System.Threading.Tasks;
 
 namespace DeviceInterfaces
 {
-
-    [Guid("B218DF77-16A0-44E7-A1D7-79394D0EA674")]
+    [Guid("A0FD122E-58B0-4BC8-9CB9-31673DCC7DB8")]
     [ComVisible(true)]
     [ClassInterface(ClassInterfaceType.None)]
     [Description("UA事务记录器")]

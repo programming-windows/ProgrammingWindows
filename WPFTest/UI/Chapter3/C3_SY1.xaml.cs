@@ -33,17 +33,15 @@ namespace WPFTest.UI.Chapter3
         {
             string strText1 = textBox1.Text.Trim();
             string strText2 = textBox2.Text.Trim();
-            string ret = ComTest.add("D61A457C-DBEF-43DE-80F4-394703BD3D41", "Simulation Transaction",int.Parse(strText1), int.Parse(strText2));
+            string ret = ComTest.add("2A829A21-D42A-4104-990D-706F4F21DB86", "Simulation Transaction", int.Parse(strText1), int.Parse(strText2));
             textBox3.Text = String.Concat(ret);
         }
-
-
 
         private void btn2_Click_1(object sender, RoutedEventArgs e)
         {
             string strText1 = textBox5.Text.Trim();
             string strText2 = textBox6.Text.Trim();
-            string ret = ComTest.multi("B218DF77-16A0-44E7-A1D7-79394D0EA674", "User Transaction", int.Parse(strText1), int.Parse(strText2));
+            string ret = ComTest.multi("A0FD122E-58B0-4BC8-9CB9-31673DCC7DB8", "User Transaction", int.Parse(strText1), int.Parse(strText2));
             textBox7.Text = String.Concat(ret);
         }
     }
