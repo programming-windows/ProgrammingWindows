@@ -28,13 +28,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_D5AE9F13B5BDC7EA395F630654DEDFBC"
+        "OwnerKey" = "8:_9E992A31EB0E402EAACA63B9F7A03DD4"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_9E992A31EB0E402EAACA63B9F7A03DD4"
+        "OwnerKey" = "8:_D5AE9F13B5BDC7EA395F630654DEDFBC"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -55,6 +55,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -71,6 +87,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
+            }
         }
     }
     "Deployable"
@@ -161,7 +193,7 @@
             }
             "{3C67513D-01DD-4637-8A68-80971EB9504F}:_D2F92B92BA6F4C49BEA636FB2F2BC3D7"
             {
-            "DefaultLocation" = "8:[ProgramFilesFolder][Manufacturer]\\[ProductName]"
+            "DefaultLocation" = "8:[ProgramFiles64Folder][Manufacturer]\\[ProductName]"
             "Name" = "8:#1925"
             "AlwaysCreate" = "11:FALSE"
             "Condition" = "8:"
@@ -188,7 +220,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:setupCOM"
         "ProductCode" = "8:{9D2E4E52-6A02-4B14-9619-F98DCAF5C24D}"
-        "PackageCode" = "8:{8F616C99-7B9D-4E23-ABAD-56F252C68F57}"
+        "PackageCode" = "8:{49603649-954D-42E9-BAA4-77FDBE671F59}"
         "UpgradeCode" = "8:{7F929102-D4E3-4E52-8C1E-A9B2A1DC0D6E}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -196,20 +228,20 @@
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
         "ProductVersion" = "8:1.0.0"
-        "Manufacturer" = "8:Default Company Name"
+        "Manufacturer" = "8:Wuhan University"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
         "Title" = "8:setupCOM"
         "Subject" = "8:"
-        "ARPCONTACT" = "8:Default Company Name"
+        "ARPCONTACT" = "8:Wuhan University"
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:"
-        "ARPURLINFOABOUT" = "8:"
+        "ARPURLINFOABOUT" = "8:www.whu.edu.cn"
         "ARPPRODUCTICON" = "8:"
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
-        "TargetPlatform" = "3:0"
+        "TargetPlatform" = "3:1"
         "PreBuildEvent" = "8:"
         "PostBuildEvent" = "8:"
         "RunPostBuildEvent" = "3:0"
@@ -709,7 +741,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_9E992A31EB0E402EAACA63B9F7A03DD4"
             {
-            "SourcePath" = "8:..\\DeviceInterfaces\\obj\\Debug\\DeviceInterfaces.dll"
+            "SourcePath" = "8:..\\DeviceInterfaces\\obj\\Release\\DeviceInterfaces.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_D2F92B92BA6F4C49BEA636FB2F2BC3D7"

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace DeviceInterfaces
 {
 
-    [Guid("2A829A21-D42A-4104-990D-706F4F21DB86")]
+    [Guid("9F6E38B0-2657-443D-BCC1-1C3246221828")]
     [ComVisible(true)]
     [ClassInterface(ClassInterfaceType.None)]
     [Description("模拟事务记录")]
