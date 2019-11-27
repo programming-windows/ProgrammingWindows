@@ -10,6 +10,8 @@
 #define DLL_CPP_API __declspec(dllimport)
 #endif
 
+// https://blog.csdn.net/liubing8609/article/details/82156067
+// https://blog.csdn.net/qq_33757398/article/details/82229325
 // 此类是从 dll_cpp.dll 导出的
 class DLL_CPP_API Cdll_cpp {
 public:
