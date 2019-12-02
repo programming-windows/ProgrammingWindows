@@ -14,6 +14,10 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+// _托管动态链接库DLL的调用过程:
+// <1> 创建C#工程项目，项目类型为应用程序
+// <2> 打开引用管理器，引用托管动态链接库的DLL文件
+
 namespace WPFTest.UI.Chapter2
 {
     /// <summary>
@@ -29,6 +33,8 @@ namespace WPFTest.UI.Chapter2
 
         private void btn1_Click_1(object sender, RoutedEventArgs e)
         {
+            // _托管动态链接库DLL的调用过程:
+            // <3> 在程序中调用dll中的函数
             string strText = textBox1.Text.Trim();
             long ret = DLLCsharp.FactorialF(long.Parse(strText));
             textBox2.Text = String.Concat(ret);
@@ -36,6 +42,8 @@ namespace WPFTest.UI.Chapter2
 
         private void btn2_Click_1(object sender, RoutedEventArgs e)
         {
+            // _托管动态链接库DLL的调用过程:
+            // <3> 在程序中调用dll中的函数
             string strText = textBox3.Text.Trim();
             long ret = DLLCsharp.FibonacciF(long.Parse(strText));
             textBox4.Text = String.Concat(ret);
@@ -45,7 +53,7 @@ namespace WPFTest.UI.Chapter2
         {
             listBox1.Items.Clear();
 
-            //DLL所在的绝对路径 
+            // DLL所在的绝对路径 
             Assembly assembly = Assembly.LoadFrom(AppDomain.CurrentDomain.BaseDirectory + "dll_csharp.dll");
             //注意写法：程序集.类名  
             Type type = assembly.GetType("dll_csharp.DLLCsharp");

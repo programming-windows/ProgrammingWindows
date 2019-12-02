@@ -33,6 +33,8 @@ namespace WPFTest.UI.Chapter2
         {
             string strText1 = textBox1.Text.Trim();
             string strText2 = textBox2.Text.Trim();
+            // 非托管动态链接库DLL的调用过程:
+            // <3> 在程序中调用重新声明的函数
             int ret = DllTest.testAdd(int.Parse(strText1), int.Parse(strText2));
             textBox3.Text = String.Concat(ret);
         }
@@ -43,6 +45,8 @@ namespace WPFTest.UI.Chapter2
         {
             string strText1 = textBox5.Text.Trim();
             string strText2 = textBox6.Text.Trim();
+            // 非托管动态链接库DLL的调用过程:
+            // <3> 在程序中调用重新声明的函数
             int ret = DllTest.testMulti(int.Parse(strText1), int.Parse(strText2));
             textBox7.Text = String.Concat(ret);
         }
