@@ -13,6 +13,8 @@ namespace WPFTest
         {
             Console.Write("begin creating transaction");
             ITransaction iTransaction = null;
+            // COM 组件的创建与调用过程:
+            //  4. 调用/使用 COM 组件
             try
             {
                 // 调用注册表的CLSID, 并实例化
@@ -33,12 +35,16 @@ namespace WPFTest
 
         public static string add(string guid,string connectionStr,int a, int b)
         {
+            // COM 组件的创建与调用过程:
+            //  4. 调用/使用 COM 组件
             ITransaction transaction = CreateTransaction(guid, connectionStr);
             return transaction.add(a, b);
         }
 
         public static string multi(string guid, string connectionStr, int a, int b)
         {
+            // COM 组件的创建与调用过程:
+            //  4. 调用/使用 COM 组件
             ITransaction transaction = CreateTransaction(guid, connectionStr);
             return transaction.multi(a, b);
         }
