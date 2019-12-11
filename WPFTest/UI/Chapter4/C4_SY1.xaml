@@ -40,8 +40,8 @@
                 <RowDefinition Height="*"></RowDefinition>
             </Grid.RowDefinitions>
 
-            <Label x:Name="label1" Grid.Row="0" Grid.Column="0" Content="ping主机"   HorizontalAlignment="Stretch" VerticalAlignment="Center" HorizontalContentAlignment="Left" Margin="0,8" Height="24"  />
-            <TextBox x:Name="textBox1"  Grid.Row="1" Grid.Column="0"  HorizontalAlignment="Left" Height="30"  Width="150" TextWrapping="Wrap" Text="" VerticalAlignment="Center"  />
+            <Label x:Name="label1" Grid.Row="0" Grid.Column="0" Content="ping主机"   HorizontalAlignment="Stretch" VerticalAlignment="Center" HorizontalContentAlignment="Left" Margin="15,3" Height="24"  />
+            <TextBox x:Name="textBox1"  Grid.Row="1" Grid.Column="0"  HorizontalAlignment="Left" Height="30"  Width="150" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Margin="15,0,0,0"  />
             <Button x:Name="btn1" Grid.Row="3" Grid.Column="0"  Content="runCMD-ping" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="150" Height="30" Click="runCMD" />
             <!--
             <Button x:Name="btn2" Grid.Row="3" Grid.Column="0"  Content="refresh" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="100" Height="30" />
